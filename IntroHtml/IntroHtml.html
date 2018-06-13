@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>IntroHtmlForm</title>
+</head>
+<body>
+
+<form method="post">
+    <p><label for="clientName">Ваше имя</label>
+        <input type="text" id="clientName" name="clientName"/></p>
+    <p>Пол:
+        <label for="gender1">М</label>
+        <input type="radio" id="gender1" value="М" name="radiobutton"/>
+        <label for="gender2">Ж</label>
+        <input type="radio" id="gender2" value="Ж" name="radiobutton"/></p>
+    <p><label for="textarea">Дополнительная информация</label><br/>
+        <textarea id="textarea"> </textarea></p>
+    Выберете чекбокс:
+    <p><label for="checkBox">Чекбокс1</label>
+        <input type="checkbox" id="checkBox" name="checkBox1"/>
+        <label for="checkBox1">Чекбокс2</label>
+        <input type="checkbox" id="checkBox1" name="checkBox2"/></p>
+    <label for="heroes">Любимые герои мультфильма:</label>
+    <p><select size="3" id="heroes" multiple name="hero[]">
+        <option disabled>выберете героя</option>
+        <option value="Чебурашка">Чебурашка</option>
+        <option selected value="Крокодил Гена">Крокодил Гена</option>
+        <option value="Шапокляк">Шапокляк</option>
+        <option value="Крыса Лариса">Крыса Лариса</option>
+    </select></p>
+    <label for="hero">Самый любимый герой:</label>
+    <p><select size="1" id="hero" name="hero[]">
+        <option disabled>выберете героя</option>
+        <option value="Чебурашка">Чебурашка</option>
+        <option selected value="Крокодил Гена">Крокодил Гена</option>
+        <option value="Шапокляк">Шапокляк</option>
+        <option value="Крыса Лариса">Крыса Лариса</option>
+    </select></p>
+
+    <button type="submit">Submit</button>
+</form>
+</body>
+</html>
