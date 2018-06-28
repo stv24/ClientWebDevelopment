@@ -40,5 +40,5 @@ var listSquares = temp.map(function (val) {
 
 console.log("список чисел от 1 до 100:");
 console.log(lastList.join(","));
-console.log("список квадратов четных чисел от 1 до 100:");
+console.log("список квадратов чётных чисел от 1 до 100:");
 console.log(listSquares.join(","));
