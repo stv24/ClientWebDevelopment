@@ -6,14 +6,14 @@ console.log("отсортированный по убыванию массив:"
 console.log(list.join(","));
 
 var firsSlice = list.slice(0, 5);
-var secondSlice = list.slice(-5);
+var secondSlice = list.slice(length - 5);
 console.log("подмассив из первых пяти элементов:");
 console.log(firsSlice.join(","));
 console.log("подмассив из последних пяти элементов:");
 console.log(secondSlice.join(","));
 
 var sum = list.reduce(function (accumulator, currentValue) {
-    if ((accumulator + currentValue) % 2 === 0) {
+    if ((currentValue) % 2 === 0) {
         return (accumulator + currentValue);
     }
     return accumulator;
