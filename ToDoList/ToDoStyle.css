@@ -1,0 +1,18 @@
+h1{
+  color: blueviolet;
+}
+
+button{
+    background-color: coral;
+    font-size: 18px;
+}
+
+li{
+    color: blue;
+    font-size: 20px;
+
+}
+
+body {
+   margin: 30px;
+}

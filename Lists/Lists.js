@@ -5,10 +5,11 @@ list.sort(function (e1, e2) {
 console.log("отсортированный по убыванию массив:");
 console.log(list.join(","));
 
-var firsSlice = list.slice(0, 5);
-var secondSlice = list.slice(length - 5);
+var firstSlice = list.slice(0, 5);
+
+var secondSlice = list.slice(list.length - 5);
 console.log("подмассив из первых пяти элементов:");
-console.log(firsSlice.join(","));
+console.log(firstSlice.join(","));
 console.log("подмассив из последних пяти элементов:");
 console.log(secondSlice.join(","));
 
