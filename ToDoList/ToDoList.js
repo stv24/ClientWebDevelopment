@@ -5,16 +5,20 @@ document.addEventListener("DOMContentLoaded", function () {
 
     addToDoButton.addEventListener("click", function () {
         var text = addToDoInput.value;
-        var listItem = document.createElement("li");
-        var removeButton = document.createElement("button");
-        listItem.innerText = text;
-        removeButton.innerText = "Удалить";
-        listItem.appendChild(removeButton);
-        list.appendChild(listItem);
+        if (text.length !== 0) {
+            var listItem = document.createElement("li");
+            var removeButton = document.createElement("button");
 
-        removeButton.addEventListener("click", function () {
-            list.removeChild(listItem);
-        });
+            listItem.innerText = text;
+
+            removeButton.innerText = "Удалить";
+            listItem.appendChild(removeButton);
+            list.appendChild(listItem);
+
+            removeButton.addEventListener("click", function () {
+                list.removeChild(listItem);
+            });
+        }
         addToDoInput.value = "";
     });
 
