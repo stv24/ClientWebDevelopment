@@ -59,7 +59,7 @@ console.log("Отсортированный список людей от 20 до
 console.log(sortedPeople);
 
 _.each(peoples, function (peoples) {
-    peoples.fullName = peoples.name + " "+ peoples.lastName;
+    peoples.fullName = peoples.name + " " + peoples.lastName;
 });
 
 console.log("список людей с полем fullName:");
