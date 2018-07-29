@@ -4,46 +4,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>PhoneBook</title>
-    <link href="normalize.css" rel="stylesheet">
-    <link href="PhoneBookStyle.css" rel="stylesheet">
+    <link href="css/PhoneBookStyle.css" rel="stylesheet">
     <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
 
 </head>
 <body>
+<div class="container">
+    <table class="table table-bordered">
+        <thead>
+        <tr>
+            <th scope="col">№</th>
+            <th scope="col">Фамилия</th>
+            <th scope="col">Имя</th>
+            <th scope="col">Номер телефона</th>
+            <th scope="col"></th>
+        </tr>
+        </thead>
+        <tbody class="tableBodyClass">
+        </tbody>
+    </table>
 
+    <form method="post">
+        <div class="form-group">
+            <label for="surname">Фамилия: </label>
+            <input type="text" class="form-control inputClass" id="surname" name="clientSurname"/>
+        </div>
 
-<table>
-    <thead>
-    <tr>
-        <th>№</th>
-        <th>Фамилия</th>
-        <th>Имя</th>
-        <th>Номер телефона</th>
-        <th></th>
+        <div class="form-group">
+            <label for="name">Имя: </label>
+            <input type="text" class="form-control inputClass" id="name" name="clientName"/>
+        </div>
 
-    </tr>
-    </thead>
-    <tbody>
-    </tbody>
-</table>
+        <div class="form-group">
+            <label for="cellNumber">Телефон: </label>
+            <input type="text" class="form-control inputClass" id="cellNumber" name="clientCellNumber"/>
+        </div>
 
+        <p>
+            <button id="addButton" class="btn btn-primary" type="button">Добавить</button>
+        </p>
 
-<form method="post">
-    <p><label for="surname">Фамилия: </label>
-        <input type="text" id="surname" name="clientSurname"/>
-    </p>
-    <p><label for="name">Имя: </label>
-        <input type="text" id="name" name="clientName"/>
-    </p>
-    <p><label for="cell_number">Телефон: </label>
-        <input type="text" id="cell_number" name="client_cell_number"/>
-    </p>
-    <p>
-        <button id="add-button" type="button">Добавить</button>
-    </p>
-</form>
-<script src="jquery-3.3.1.js"></script>
-<script src="PhoneBook.js"></script>
+    </form>
+</div>
+<script src="js/jquery-3.3.1.js"></script>
+<script src="js/PhoneBook.js"></script>
 <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

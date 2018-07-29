@@ -3,7 +3,7 @@ table {
     font-size: 20px;
     border-collapse: collapse;
     padding: 30px;
-    background-color: cornflowerblue;
+    background-color: cornflowerblue !important;
     margin-top: 30px;
     margin-left: 30px;
 
@@ -24,10 +24,10 @@ form {
     margin-left: 30px;
 }
 
-.rem_button {
+.remButton {
     background-color: cornflowerblue;
 }
 
 .validation {
-    background-color: bisque;
+    background-color: bisque !important;
 }
